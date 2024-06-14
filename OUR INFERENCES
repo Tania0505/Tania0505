@@ -1,0 +1,71 @@
+HTML :
+HTML (HyperText Markup Language) is the standard markup language used to create web pages. It structures web content by defining elements such as headings, paragraphs, links, images, and other media. HTML uses a series of tags, enclosed in angle brackets, to denote these elements. These tags usually come in pairs, with an opening tag (e.g., `<p>`) and a closing tag (e.g., `</p>`), with the content in between them. Some tags, like `<img>` and `<br>`, are self-closing. HTML documents start with a `<!DOCTYPE html>` declaration, followed by an `<html>` tag that encapsulates the entire content of the page. Within the `<html>` tag, there are two main sections: `<head>` for meta-information, such as the title and links to stylesheets, and `<body>` for the main content. Attributes can be added to tags to provide additional information or specify styling and behavior. Here's a brief example of HTML syntax:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+</head>
+<body>
+    <h1>Welcome to My Web Page</h1>
+    <p>This is a paragraph of text.</p>
+    <a href="https://www.example.com">Visit Example</a>
+    <img src="image.jpg" alt="Description of image">
+</body>
+</html>
+```
+
+This code creates a simple web page with a title, a heading, a paragraph, a hyperlink, and an image.
+CSS :
+CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a document written in HTML or XML. CSS enhances the visual appeal and layout of web pages by allowing developers to separate content from design. It controls the look and feel of elements, including colors, fonts, spacing, positioning, and animations. CSS works by associating style rules with HTML elements. These rules are defined by selectors, which target specific HTML elements, and declarations, which specify the properties and their values. Declarations are enclosed within curly braces `{}`, and each consists of a property (e.g., `color`) and a value (e.g., `blue`), separated by a colon and terminated with a semicolon. CSS can be added to HTML documents in three ways: inline (using the `style` attribute within HTML elements), internal (using a `<style>` tag within the `<head>` section of an HTML document), and external (linking to an external `.css` file using a `<link>` tag). Here's an example of CSS syntax:
+
+```css
+/* External CSS file or <style> tag */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+```
+
+In this example, the `body` selector styles the entire document's background color and font. The `h1` selector centers and colors the heading text. The `p` selector adjusts the paragraph text's size, spacing, and margin. The `a` selector styles links with a specific color and removes underlines, while the `a:hover` pseudo-class adds an underline when a user hovers over a link.
+JAVASCRIPT:
+JavaScript is a versatile, high-level programming language that enables interactive web pages and dynamic user experiences. It is an essential part of web development, alongside HTML and CSS, allowing developers to create complex features such as animations, form validations, dynamic content updates, and more. JavaScript runs on the client side in the user's browser, but it can also be executed on the server side using environments like Node.js. The language supports object-oriented, imperative, and functional programming styles, making it highly adaptable. JavaScript interacts with the Document Object Model (DOM) to manipulate HTML and CSS dynamically, responding to user events like clicks, keyboard inputs, and mouse movements. It uses syntax similar to other programming languages, featuring variables, control structures (like loops and conditionals), functions, objects, and events. Here is a brief example of JavaScript syntax:
+
+```javascript
+// Defining a variable
+let message = 'Hello, world!';
+
+// Function to display an alert
+function showAlert() {
+    alert(message);
+}
+
+// Adding an event listener to a button
+document.getElementById('myButton').addEventListener('click', showAlert);
+
+// Manipulating the DOM
+document.getElementById('myHeading').textContent = 'Welcome to My Web Page';
+```
+
+In this example, a variable `message` is defined to store a string. The `showAlert` function displays this message in an alert box. An event listener is added to a button with the ID `myButton`, which triggers the `showAlert` function when clicked. Additionally, the text content of an HTML element with the ID `myHeading` is changed to display a welcome message. This illustrates how JavaScript can create interactive and dynamic web applications.
